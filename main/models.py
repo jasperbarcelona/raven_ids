@@ -88,8 +88,8 @@ class Schedule(db.Model):
     school_no = db.Column(db.String(32))
     nursery_morning_class = db.Column(Boolean, unique=False)
     nursery_afternoon_class = db.Column(Boolean, unique=False)
-    preparatory_morning_class = db.Column(Boolean, unique=False)
-    preparatory_afternoon_class = db.Column(Boolean, unique=False)
+    prekinder_morning_class = db.Column(Boolean, unique=False)
+    prekinder_afternoon_class = db.Column(Boolean, unique=False)
     kinder_morning_class = db.Column(Boolean, unique=False)
     kinder_afternoon_class = db.Column(Boolean, unique=False)
     first_grade_morning_class = db.Column(Boolean, unique=False)
@@ -149,10 +149,10 @@ class Schedule(db.Model):
     nursery_morning_end = db.Column(db.String(30))
     nursery_afternoon_start = db.Column(db.String(30))
     nursery_afternoon_end = db.Column(db.String(30))
-    preparatory_morning_start = db.Column(db.String(30))
-    preparatory_morning_end = db.Column(db.String(30))
-    preparatory_afternoon_start = db.Column(db.String(30))
-    preparatory_afternoon_end = db.Column(db.String(30))
+    prekinder_morning_start = db.Column(db.String(30))
+    prekinder_morning_end = db.Column(db.String(30))
+    prekinder_afternoon_start = db.Column(db.String(30))
+    prekinder_afternoon_end = db.Column(db.String(30))
     kinder_morning_start = db.Column(db.String(30))
     kinder_morning_end = db.Column(db.String(30))
     kinder_afternoon_start = db.Column(db.String(30))
@@ -733,8 +733,8 @@ class Regular(db.Model, Serializer):
         'day',
         'nursery_morning_class',
         'nursery_afternoon_class',
-        'preparatory_morning_class',
-        'preparatory_afternoon_class',
+        'prekinder_morning_class',
+        'prekinder_afternoon_class',
         'kinder_morning_class',
         'kinder_afternoon_class',
         'first_grade_morning_class',
@@ -789,10 +789,10 @@ class Regular(db.Model, Serializer):
         'nursery_morning_end',
         'nursery_afternoon_start',
         'nursery_afternoon_end',
-        'preparatory_morning_start',
-        'preparatory_morning_end',
-        'preparatory_afternoon_start',
-        'preparatory_afternoon_end',
+        'prekinder_morning_start',
+        'prekinder_morning_end',
+        'prekinder_afternoon_start',
+        'prekinder_afternoon_end',
         'kinder_morning_start',
         'kinder_morning_end',
         'kinder_afternoon_start',
@@ -899,8 +899,8 @@ class Regular(db.Model, Serializer):
     day = db.Column(db.String(20))
     nursery_morning_class = db.Column(Boolean, unique=False)
     nursery_afternoon_class = db.Column(Boolean, unique=False)
-    preparatory_morning_class = db.Column(Boolean, unique=False)
-    preparatory_afternoon_class = db.Column(Boolean, unique=False)
+    prekinder_morning_class = db.Column(Boolean, unique=False)
+    prekinder_afternoon_class = db.Column(Boolean, unique=False)
     kinder_morning_class = db.Column(Boolean, unique=False)
     kinder_afternoon_class = db.Column(Boolean, unique=False)
     first_grade_morning_class = db.Column(Boolean, unique=False)
@@ -959,10 +959,10 @@ class Regular(db.Model, Serializer):
     nursery_morning_end = db.Column(db.String(30))
     nursery_afternoon_start = db.Column(db.String(30))
     nursery_afternoon_end = db.Column(db.String(30))
-    preparatory_morning_start = db.Column(db.String(30))
-    preparatory_morning_end = db.Column(db.String(30))
-    preparatory_afternoon_start = db.Column(db.String(30))
-    preparatory_afternoon_end = db.Column(db.String(30))
+    prekinder_morning_start = db.Column(db.String(30))
+    prekinder_morning_end = db.Column(db.String(30))
+    prekinder_afternoon_start = db.Column(db.String(30))
+    prekinder_afternoon_end = db.Column(db.String(30))
     kinder_morning_start = db.Column(db.String(30))
     kinder_morning_end = db.Column(db.String(30))
     kinder_afternoon_start = db.Column(db.String(30))

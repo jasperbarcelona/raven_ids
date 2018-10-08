@@ -828,7 +828,7 @@ def fetch_batch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     student_id=vals[9],
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
@@ -864,7 +864,7 @@ def fetch_batch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     student_id=vals[9],
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
@@ -946,7 +946,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     student_id=vals[8],
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
@@ -959,7 +959,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -976,13 +976,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     student_id=vals[8],
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
@@ -1055,7 +1055,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     student_id=vals[8],
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
@@ -1068,7 +1068,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1085,13 +1085,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     student_id=vals[8],
                     last_name=vals[1].title().replace('.','').replace(',',''),
@@ -1164,7 +1164,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     student_id=vals[8],
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
@@ -1177,7 +1177,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1194,13 +1194,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     student_id=vals[8],
                     last_name=vals[1].title().replace('.','').replace(',',''),
@@ -1273,7 +1273,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     student_id=vals[8],
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
@@ -1286,7 +1286,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1303,13 +1303,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
                     level='1st Grade',
@@ -1383,7 +1383,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
                     middle_name=vals[3].strip().title().replace('.','').replace(',',''),
@@ -1396,7 +1396,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1413,13 +1413,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
                     level='2nd Grade',
@@ -1431,7 +1431,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                    added_by=vals[5].title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1447,7 +1447,7 @@ def fetch_records():
                 parent_id=parent_id,
                 parent_relation='Unknown',
                 parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                added_by=vals[5].title().replace('.','').replace(',',''),
+                added_by=session['user_name'],
                 )
         db.session.add(new_record)
         db.session.commit()
@@ -1492,7 +1492,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
                     student_id=vals[8],
@@ -1505,7 +1505,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1522,13 +1522,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
                     level='3rd Grade',
@@ -1540,7 +1540,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                    added_by=vals[5].title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1556,7 +1556,7 @@ def fetch_records():
                 parent_id=parent_id,
                 parent_relation='Unknown',
                 parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                added_by=vals[5].title().replace('.','').replace(',',''),
+                added_by=session['user_name'],
                 )
         db.session.add(new_record)
         db.session.commit()
@@ -1601,7 +1601,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
                     middle_name=vals[3].strip().title().replace('.','').replace(',',''),
@@ -1614,7 +1614,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1631,13 +1631,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
                     level='4th Grade',
@@ -1649,7 +1649,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                    added_by=vals[5].title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1665,7 +1665,7 @@ def fetch_records():
                 parent_id=parent_id,
                 parent_relation='Unknown',
                 parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                added_by=vals[5].title().replace('.','').replace(',',''),
+                added_by=session['user_name'],
                 )
         db.session.add(new_record)
         db.session.commit()
@@ -1710,7 +1710,7 @@ def fetch_records():
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
                     first_name=vals[2].strip().title().replace('.','').replace(',',''),
                     last_name=vals[1].strip().title().replace('.','').replace(',',''),
                     middle_name=vals[3].strip().title().replace('.','').replace(',',''),
@@ -1723,7 +1723,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1740,13 +1740,13 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).strip(),
-                    added_by=vals[5].strip().title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
         else:
             if vals[0]:
                 new_record = K12(
                     school_no=session['school_no'],
-                    id_no=str(int(vals[0])).replace('.','').replace(',',''),
+                    id_no='000%s'%str(int(vals[0])).replace('.','').replace(',',''),
                     first_name=vals[2].title().replace('.','').replace(',',''),
                     last_name=vals[1].title().replace('.','').replace(',',''),
                     level='5th Grade',
@@ -1758,7 +1758,7 @@ def fetch_records():
                     parent_id=parent_id,
                     parent_relation='Unknown',
                     parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                    added_by=vals[5].title().replace('.','').replace(',',''),
+                    added_by=session['user_name'],
                     )
             else:
                 new_record = K12(
@@ -1774,7 +1774,7 @@ def fetch_records():
                 student_id=vals[8],
                 parent_relation='Unknown',
                 parent_contact=str(vals[6]).replace('.','').replace(',',''),
-                added_by=vals[5].title().replace('.','').replace(',',''),
+                added_by=session['user_name'],
                 )
         db.session.add(new_record)
         db.session.commit()
@@ -1819,7 +1819,7 @@ def fetch_records():
     #         if vals[0]:
     #             new_record = K12(
     #                 school_no=session['school_no'],
-    #                 id_no=str(int(vals[0])).strip().replace('.','').replace(',',''),
+    #                 id_no='000%s'%str(int(vals[0])).strip().replace('.','').replace(',',''),
     #                 first_name=vals[2].strip().title().replace('.','').replace(',',''),
     #                 last_name=vals[1].strip().title().replace('.','').replace(',',''),
     #                 middle_name=vals[3].strip().title().replace('.','').replace(',',''),
@@ -1832,7 +1832,7 @@ def fetch_records():
     #                 parent_id=parent_id,
     #                 parent_relation='Unknown',
     #                 parent_contact=str(vals[6]).strip(),
-    #                 added_by=vals[5].strip().title().replace('.','').replace(',',''),
+    #                 added_by=session['user_name'],
     #                 )
     #         else:
     #             new_record = K12(
@@ -1849,7 +1849,7 @@ def fetch_records():
     #                 parent_id=parent_id,
     #                 parent_relation='Unknown',
     #                 parent_contact=str(vals[6]).strip(),
-    #                 added_by=vals[5].strip().title().replace('.','').replace(',',''),
+    #                 added_by=session['user_name'],
     #                 )
     #     else:
     #         if vals[0]:

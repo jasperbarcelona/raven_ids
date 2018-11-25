@@ -5408,11 +5408,11 @@ def rebuild_database():
     school = School(
         school_no='sgb-lc2017',
         api_key='ecc67d28db284a2fb351d58fe18965f9',
-        name="Molino Integrated School of Candelaria, Inc.",
-        address="Candelaria, Quezon",
-        city="Candelaria",
-        email="misci@gmail.com",
-        contact="(042) 316-5471"
+        name="Infotech Development Systems Colleges, Inc",
+        address="Ligao, Albay",
+        city="Ligao",
+        email="n/a",
+        contact="n/a"
         )
 
     schedule = Schedule(

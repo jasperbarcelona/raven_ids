@@ -14,10 +14,10 @@ from flask import jsonify
 
 app = Celery('tasks', broker='amqp://sgb:sgbsaints@rabbitmq/pisara')
 
-IPP_URL = 'https://devapi.globelabs.com.ph/smsmessaging/v1/outbound/21587460/requests'
-PASSPHRASE = 'k7W6Y9hNfz'
-APP_ID = 'x65gtry7b7u7oT5dAbi7oKudp6AptkGA'
-APP_SECRET = '72755ee33c36657daaa38a57a50728f8ef2b00189577a0f5fb432f8549386239'
+IPP_URL = 'https://devapi.globelabs.com.ph/smsmessaging/v1/outbound/21588479/requests'
+PASSPHRASE = '24BUubukMQ'
+APP_ID = 'EGXMuB5eEgCMLTKxExieqkCGeGeGuBon'
+APP_SECRET = 'f3e1ab30e23ea7a58105f058318785ae236378d1d9ebac58fe8b42e1e239e1c3'
 
 # os.environ['DATABASE_URL']
 # 'postgresql://admin:sgbsaints@db/sgb'
